@@ -1,36 +1,128 @@
 <!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="js/script.js"></script>
+  </head>
 
-<!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
-<body style="font-family:Verdana;">
-<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
-  <h1>Hello World</h1>
-</div>
+  <!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
+  <body style="font-family:Verdana;">
+    
+    <div class="div-title">
+      Distance to Time Conversion Tool
+    </div>
+    <div class="btn-and-txt">
+      <span>Distance</span>
+      <input type="text" id="distance-inp"></input>
+      <button id="btn-calculate" onclick="calculate()">calculate</button>  
+    </div>
+    <div id="div-result">
+      <span id="result"></span>
+    </div>
+    <form class="form1">
+      <table class="table1">
+        <tr>
+          <th>Transportation Type</th>
+          <th>Time needed to reach input distance in mins</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="walking" name="transport-type" value="walking">
+            <label id="label-walking" for="walking">Walking</label><br>
+          </td>
+          <td>
+            <span id="walking-res"></span> 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="boosted" name="transport-type" value="boosted">
+            <label id="label-boosted" for="boosted">Boosted Mini S Board</label><br>
+          </td>  
+          <td>
+            <span id="boosted-res"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="evolve" name="transport-type" value="evolve">
+            <label id="label-evolve" for="evolve">Evolve Bamboo GTR 2in1</label><br>
+          </td>  
+          <td>
+            <span id="evolve-res"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="segway" name="transport-type" value="segway">
+            <label id="label-segway" for="segway">Segway Ninebot S-PLUS</label><br> 
+          </td>  
+          <td>
+            <span id="segway-res"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="hover" name="transport-type" value="hover">
+            <label id="label-hover" for="hover">Hovertrax Hoverboard</label><br>
+          </td>
+          <td>
+            <span id="hover-res"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="onewheel" name="transport-type" value="onewheel">
+            <label id="label-onewheel" for="onewheel">OneWheel XR</label><br>
+          </td>
+          <td>
+            <span id="onewheel-res"></span>
+          </td>
+        </tr>    
+        <tr>
+          <td>
+            <input type="radio" id="moto" name="transport-type" value="moto">
+            <label id="label-moto" for="moto">MotoTec Skateboard</label><br>
+          </td>
+          <td>
+            <span id="moto-res"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="segway-s" name="transport-type" value="segway-s">
+            <label id = "label-segway-s" for="segway-s">Segway Ninebot S</label><br>
+          </td>
+          <td>
+            <span id="segway-s-res"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="razor" name="transport-type" value="razor">
+            <label id="label-razor" for="razor">Razor Scooter</label><br>
+          </td>
+          <td>
+            <span id="razor-res"></span>
+          </td>
+        </tr>  
+        <tr>
+          <td>
+            <input type="radio" id="geo" name="transport-type" value="geo">
+            <label id="label-geo" for="geo">GeoBlade 500</label><br>
+          </td>
+          <td>
+            <span id="geo-res"></span>
+          </td>
+        </tr>    
+        
+      </table>  
+    </form>
+    <!--We need to show the time needed for all the transport types-->
+ 
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="/a">Normal Rabbit</a>
-    <a href="/b">Gray Rabbit</a>
-    <a href="/c">Sepia Rabbit</a>
-  </div>
-
-  <div class="main">
-    <h2>Why are these colors so ugly?</h2>
-    <p>Sure makes you feel motivated to pick a better color-scheme for yourself instead of sticking with these ugly default colors, huh? >:)</p>
-  </div>
-
-  <div class="right">
-    <h2>About</h2>
-    <p>This is some example code prepared for CS160: User Interface Design & Development, Summer 2022.</p>
-  </div>
-</div>
-
-
-</body>
+  </body>
 </html>
 
